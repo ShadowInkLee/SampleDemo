@@ -46,6 +46,10 @@ module.exports = function(grunt) {
                     livereload: true,
                     // debug: true,
                     base: ['./bower_components','./Demo','../SampleDemo']
+                    // base:[{path:'./bower_components'},{path:'./Demo',options:{
+                    //     extensions:['html','htm'],
+                    //     'index':['index.html']
+                    // }},{path:'../SampleDemo'}]
                 }
             }
         },
