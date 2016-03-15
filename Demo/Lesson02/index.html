@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>AngualrJS</title>
+	<title>Conceptual Overview-AngualrJS Data Binding</title>
 	<script type="text/javascript" src="/bower_components/angular/angular.js"></script>
 	<link rel="stylesheet" href="styles/main.css"> 
 </head>
 <body>
-	Hello,Learn Angular {{'Lesson02'}}!
+	<div ng-app ng-init="qty=1;cost=2">
+	 <b>Invoice:</b>
+	 <div>
+	 	Quantity: <input type="number" min="0" ng-model="qty">
+	 </div>
+	 <div>
+	 	Cost: <input type="number" min="0" ng-model="cost">
+	 </div>
+	 <div>
+	 	<b>Total:</b> {{qty*cost| currency}}
+	 </div>
+	</div>
 </body>
 </html>
